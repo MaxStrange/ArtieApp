@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71ACBF13-45B2-47F8-8D56-252C1B35FAAA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArtieGUI</RootNamespace>
+    <AssemblyName>ArtieGUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>search.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.9.3\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArtieController.cs" />
+    <Compile Include="ArtieControllerToSerialPortSlave.cs" />
+    <Compile Include="CalibrateArmGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalibrateArmGUI.Designer.cs">
+      <DependentUpon>CalibrateArmGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanelController.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IAppendToDataLog.cs" />
+    <Compile Include="IControlPanelParent.cs" />
+    <Compile Include="ISearchButtonParent.cs" />
+    <Compile Include="IToolStripParent.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchButtonController.cs" />
+    <Compile Include="SearchSlave.cs" />
+    <Compile Include="TCP_IP_ClientController.cs" />
+    <Compile Include="TCP_IP_ClientStartGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCP_IP_ClientStartGUI.Designer.cs">
+      <DependentUpon>TCP_IP_ClientStartGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolStripController.cs" />
+    <EmbeddedResource Include="CalibrateArmGUI.resx">
+      <DependentUpon>CalibrateArmGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TCP_IP_ClientStartGUI.resx">
+      <DependentUpon>TCP_IP_ClientStartGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AbstractDataClasses\AbstractDataClasses.csproj">
+      <Project>{1669b7ba-8f4a-4dd1-ad2d-d0401c578285}</Project>
+      <Name>AbstractDataClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ActionSet\ActionSet.csproj">
+      <Project>{11b748db-ce5f-4c50-bc86-df7259d57b30}</Project>
+      <Name>ActionSet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArtieViaSerialPort\ArtieViaSerialPort.csproj">
+      <Project>{a55cc7b7-0731-4130-9c48-1c8e5b220e6f}</Project>
+      <Name>ArtieViaSerialPort</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BeowulfCluster\BeowulfCluster.csproj">
+      <Project>{4e3928ec-24ea-405f-9df3-0505128c5e16}</Project>
+      <Name>BeowulfCluster</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataBase\DataBase.csproj">
+      <Project>{e72a36b5-ea04-4582-bf74-01440f087de3}</Project>
+      <Name>DataBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Matrices\Matrices.csproj">
+      <Project>{276e7519-ccc3-4a00-8f71-f5e7c0d660b3}</Project>
+      <Name>Matrices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PerceptionSets\PerceptionStates.csproj">
+      <Project>{07382d08-54dd-446b-b4c2-ae49b7d355d0}</Project>
+      <Name>PerceptionStates</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SearchAbstractDataTypes\SearchAbstractDataTypes.csproj">
+      <Project>{ecda77e5-e94e-4fb6-a5bf-93e046358ebe}</Project>
+      <Name>SearchAbstractDataTypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Search\Search.csproj">
+      <Project>{e8fb0e01-c120-43b9-b30e-1cdead197e70}</Project>
+      <Name>Search</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UsefulStaticMethods\UsefulStaticMethods.csproj">
+      <Project>{aa0403e4-72c0-4570-85f6-0e0840f269ce}</Project>
+      <Name>UsefulStaticMethods</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="search.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

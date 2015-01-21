@@ -1,0 +1,14 @@
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\ActionSet\bin\Debug\ActionSet.dll
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\ActionSet\bin\Debug\ActionSet.pdb
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\ActionSet\bin\Debug\UsefulStaticMethods.dll
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\ActionSet\bin\Debug\UsefulStaticMethods.pdb
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\ActionSet\obj\Debug\ActionSet.csprojResolveAssemblyReference.cache
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\ActionSet\obj\Debug\ActionSet.dll
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\ActionSet\obj\Debug\ActionSet.pdb
+C:\Users\Max\Documents\Visual Studio 2013\Projects\ArtieApp\ActionSet\bin\Debug\ActionSet.dll
+C:\Users\Max\Documents\Visual Studio 2013\Projects\ArtieApp\ActionSet\bin\Debug\ActionSet.pdb
+C:\Users\Max\Documents\Visual Studio 2013\Projects\ArtieApp\ActionSet\bin\Debug\UsefulStaticMethods.dll
+C:\Users\Max\Documents\Visual Studio 2013\Projects\ArtieApp\ActionSet\bin\Debug\UsefulStaticMethods.pdb
+C:\Users\Max\Documents\Visual Studio 2013\Projects\ArtieApp\ActionSet\obj\Debug\ActionSet.csprojResolveAssemblyReference.cache
+C:\Users\Max\Documents\Visual Studio 2013\Projects\ArtieApp\ActionSet\obj\Debug\ActionSet.dll
+C:\Users\Max\Documents\Visual Studio 2013\Projects\ArtieApp\ActionSet\obj\Debug\ActionSet.pdb

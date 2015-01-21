@@ -1,0 +1,10 @@
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\UsefulStaticMethods\bin\Debug\UsefulStaticMethods.dll
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\UsefulStaticMethods\bin\Debug\UsefulStaticMethods.pdb
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\UsefulStaticMethods\obj\Debug\UsefulStaticMethods.dll
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\UsefulStaticMethods\obj\Debug\UsefulStaticMethods.pdb
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\UsefulStaticMethods\obj\Debug\UsefulStaticMethods.csprojResolveAssemblyReference.cache
+C:\Users\Max\documents\visual studio 2013\Projects\ArtieApp\UsefulStaticMethods\bin\Debug\UsefulStaticMethods.dll
+C:\Users\Max\documents\visual studio 2013\Projects\ArtieApp\UsefulStaticMethods\bin\Debug\UsefulStaticMethods.pdb
+C:\Users\Max\documents\visual studio 2013\Projects\ArtieApp\UsefulStaticMethods\obj\Debug\UsefulStaticMethods.dll
+C:\Users\Max\documents\visual studio 2013\Projects\ArtieApp\UsefulStaticMethods\obj\Debug\UsefulStaticMethods.pdb
+C:\Users\Max\documents\visual studio 2013\Projects\ArtieApp\UsefulStaticMethods\obj\Debug\UsefulStaticMethods.csprojResolveAssemblyReference.cache

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ECDA77E5-E94E-4FB6-A5BF-93E046358EBE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SearchAbstractDataTypes</RootNamespace>
+    <AssemblyName>SearchAbstractDataTypes</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalibrationData.cs" />
+    <Compile Include="DataBaseNodeBehavior.cs" />
+    <Compile Include="DistributedDataBaseNodeBehavior.cs" />
+    <Compile Include="DistributedNodeBehavior.cs" />
+    <Compile Include="ISearchNodeBehavior.cs" />
+    <Compile Include="NodeBehavior.cs" />
+    <Compile Include="PriorityCollection.cs" />
+    <Compile Include="PrioritySearchNodeQueue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchNode.cs" />
+    <Compile Include="SearchNodeAsString.cs" />
+    <Compile Include="SearchNodeGraphInformation.cs" />
+    <Compile Include="PrioritySearchNodeSet.cs" />
+    <Compile Include="SearchNodeInformation.cs" />
+    <Compile Include="SearchPartitionToGUI.cs" />
+    <Compile Include="Sequence.cs" />
+    <Compile Include="SequenceNotBuiltException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AbstractDataClasses\AbstractDataClasses.csproj">
+      <Project>{1669b7ba-8f4a-4dd1-ad2d-d0401c578285}</Project>
+      <Name>AbstractDataClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ActionSet\ActionSet.csproj">
+      <Project>{11b748db-ce5f-4c50-bc86-df7259d57b30}</Project>
+      <Name>ActionSet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Matrices\Matrices.csproj">
+      <Project>{276e7519-ccc3-4a00-8f71-f5e7c0d660b3}</Project>
+      <Name>Matrices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PerceptionSets\PerceptionStates.csproj">
+      <Project>{07382d08-54dd-446b-b4c2-ae49b7d355d0}</Project>
+      <Name>PerceptionStates</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UsefulStaticMethods\UsefulStaticMethods.csproj">
+      <Project>{aa0403e4-72c0-4570-85f6-0e0840f269ce}</Project>
+      <Name>UsefulStaticMethods</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

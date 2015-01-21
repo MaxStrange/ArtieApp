@@ -1,0 +1,9 @@
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\AbstractDataClasses\bin\Debug\AbstractDataClasses.dll
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\AbstractDataClasses\bin\Debug\AbstractDataClasses.pdb
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\AbstractDataClasses\obj\Debug\AbstractDataClasses.dll
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\AbstractDataClasses\obj\Debug\AbstractDataClasses.pdb
+C:\Users\Max\Documents\Visual Studio 2013\Projects\ArtieApp\AbstractDataClasses\bin\Debug\AbstractDataClasses.dll
+C:\Users\Max\Documents\Visual Studio 2013\Projects\ArtieApp\AbstractDataClasses\bin\Debug\AbstractDataClasses.pdb
+C:\Users\Max\Documents\Visual Studio 2013\Projects\ArtieApp\AbstractDataClasses\obj\Debug\AbstractDataClasses.dll
+C:\Users\Max\Documents\Visual Studio 2013\Projects\ArtieApp\AbstractDataClasses\obj\Debug\AbstractDataClasses.pdb
+C:\Users\Max\Documents\Visual Studio 2013\Projects\ArtieApp\AbstractDataClasses\obj\Debug\AbstractDataClasses.csprojResolveAssemblyReference.cache

@@ -1,0 +1,5 @@
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\AbstractDataTypes\bin\Debug\AbstractDataTypes.dll
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\AbstractDataTypes\bin\Debug\AbstractDataTypes.pdb
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\AbstractDataTypes\obj\Debug\AbstractDataTypes.csprojResolveAssemblyReference.cache
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\AbstractDataTypes\obj\Debug\AbstractDataTypes.dll
+C:\Users\Max\Documents\Visual Studio 2012\Projects\ArtieApp\AbstractDataTypes\obj\Debug\AbstractDataTypes.pdb
